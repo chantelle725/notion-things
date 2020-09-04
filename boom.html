@@ -1,19 +1,50 @@
 <html> 
 <head>
+    <title>helloe</title> 
+    <style>
+#lbl {
+    font-family: didot;
+    font-size: small;
+    color: #6B7175;
+    padding: 5px;
+    border: 1px solid #6B7175;
+    text-align: center;
+    line-height: 1.5;
+    height:85%
+
+<body>
+bringing the little big things together
+</body?
+}
+
+#date{
+    font-size:large;
+}
+body{
+    background-color: #E8D7D0;
+}
+    </style>
+</head>
+<body>
+    <div id="lbl"></div>
+</body>
+
+<head>
     <title>Greeting Message</title> 
     <style>
 #lbl {
-    font-family: monospace;
-    font-size: xx-large;
+    font-family: didot;
+    font-size: large;
     color: #6B7175;
     padding: 5px;
-    border: 1px solid #ececec;
+    border: 1px solid #6B7175;
     text-align: center;
     line-height: 1.5;
     height:85%
 
 
 }
+
 #date{
     font-size:large;
 }
@@ -45,13 +76,14 @@ body{
     var greet;
 
     if (hrs < 12)
-        greet = 'bringing the little big things  ';
+        greet = 'bringing the '+'little big things '+'together';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'bringing the little big things ';
+        greet = 'bringing the '+'little big things '+'together';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'bringing the little big things  ';
+        greet = 'bringing the '+'little big things '+'together';
 
     document.getElementById('lbl').innerHTML =
-        greet+=`<div id="date"> together ${date}</div>`;
+        greet;
+        
 </script> 
 </html>
